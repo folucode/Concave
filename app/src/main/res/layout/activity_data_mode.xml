@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474F"
+    tools:context="com.example.android.concave.dataMode">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="Home"
+            android:padding="10dp"
+            android:text="home"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:onClick="Share"
+            android:src="@drawable/ic_1f4e1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Choose Your Preferred Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/bytes_kilobytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="bytes / kilobytes Conversion"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bytes_megabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bytes_kilobytes"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="bytes / megabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bytes_gigabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/bytes_megabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="bytes / gigabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bytes_terabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/bytes_gigabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="bytes / terabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/kilobytes_megabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/bytes_terabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="kilobytes / megabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/kilobytes_gigabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/kilobytes_megabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="kilobytes / gigabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/kilobytes_terabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/kilobytes_gigabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="kilobytes / terabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/megabytes_gigabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/kilobytes_terabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="megabytes / gigabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/megabytes_terabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/megabytes_gigabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="megabytes / terabytes CONVERSION"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/gigabytes_terabytes"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/bytes_megabytes"
+            android:layout_alignStart="@+id/bytes_megabytes"
+            android:layout_below="@+id/megabytes_terabytes"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:onClick="goToSolnD"
+            android:padding="10dp"
+            android:text="gigabytes / terabytes CONVERSION"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474F"
+    tools:context="com.example.android.concave.category">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#37474F">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Choose Your Conversion Category"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f321"
+            android:drawableStart="@drawable/ic_1f321"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Temperature"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Temperature"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f4a2"
+            android:drawableStart="@drawable/ic_1f4a2"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Pressure"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pressure"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f39b"
+            android:drawableStart="@drawable/ic_1f39b"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Angle"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Angle"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f4f6"
+            android:drawableStart="@drawable/ic_1f4f6"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Data"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Data"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f4a1"
+            android:drawableStart="@drawable/ic_1f4a1"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Power"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Power"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_231b"
+            android:drawableStart="@drawable/ic_231b"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Volume"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Volume"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_1f4d0"
+            android:drawableStart="@drawable/ic_1f4d0"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Length"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Weight_Mass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Length"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_2696"
+            android:drawableStart="@drawable/ic_2696"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Weight/Mass"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Energy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Weight_Mass"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_269b"
+            android:drawableStart="@drawable/ic_269b"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Energy"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Energy"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_23f1"
+            android:drawableStart="@drawable/ic_23f1"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="move"
+            android:padding="10dp"
+            android:text="Speed"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

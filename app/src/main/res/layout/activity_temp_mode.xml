@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474F"
+    tools:context="com.example.android.concave.TempMode">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Choose Your Preferred Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/celcius_fahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#FFFFFF"
+        android:onClick="goToSoln"
+        android:padding="10dp"
+        android:text="Celcius / Fahrenheit Conversion"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/kelvin_celcius"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/celcius_fahrenheit"
+        android:layout_alignStart="@+id/celcius_fahrenheit"
+        android:layout_below="@+id/celcius_fahrenheit"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:onClick="goToSoln"
+        android:padding="10dp"
+        android:text="Celcius / Kelvin Conversion"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/fahrenheit_kelvin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/kelvin_celcius"
+        android:layout_alignStart="@+id/kelvin_celcius"
+        android:layout_below="@+id/kelvin_celcius"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:onClick="goToSoln"
+        android:padding="10dp"
+        android:text="Fahrenheit / Kelvin Conversion"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFFFF"
+        android:onClick="Home"
+        android:padding="10dp"
+        android:text="home"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Share"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_1f4e1"
+        android:layout_alignBottom="@+id/home" />
+
+    </RelativeLayout>
+
+</ScrollView>

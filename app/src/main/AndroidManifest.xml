@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.concave">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/concave"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/concave"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".TempMode" />
+        <activity android:name=".pressureMode" />
+        <activity android:name=".angleMode" />
+        <activity android:name=".dataMode" />
+        <activity android:name=".powerMode" />
+        <activity android:name=".volumeMode" />
+        <activity android:name=".lengthMode" />
+        <activity android:name=".weightMass_Mode" />
+        <activity android:name=".energy" />
+        <activity android:name=".speed" />
+        <activity android:name=".solution" />
+        <activity android:name=".category" />
+        <activity android:name=".pressure_solution" />
+        <activity android:name=".angle_solution" />
+        <activity android:name=".data_solution" />
+        <activity android:name=".power_solution" />
+        <activity android:name=".volume_solution" />
+        <activity android:name=".length_solution" />
+        <activity android:name=".weightMass_solution" />
+        <activity android:name=".energy_solution" />
+        <activity android:name=".speed_solution"></activity>
+    </application>
+
+</manifest>
